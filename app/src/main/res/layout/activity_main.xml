@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/dateFormat"
+        android:layout_width="351dp"
+        android:layout_height="58dp"
+        android:gravity="center_horizontal"
+        android:text="Date Format"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:fontFamily="@font/cantata_one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.317" />
+
+    <Button
+        android:id="@+id/dateButton"
+        android:layout_width="327dp"
+        android:layout_height="53dp"
+        android:background="@android:color/holo_green_light"
+        android:fontFamily="@font/cantata_one"
+        android:text="Get Date Format"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date"
+        app:layout_constraintVertical_bias="0.266" />
+
+    <TextView
+        android:id="@+id/timeFormat"
+        android:layout_width="311dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="196dp"
+        android:gravity="center_horizontal"
+        android:text="Time Format"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:fontFamily="@font/cantata_one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/dateButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/dateButton" />
+
+    <Button
+        android:id="@+id/timeButton"
+        android:layout_width="335dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="120dp"
+        android:background="@android:color/holo_green_light"
+        android:fontFamily="@font/cantata_one"
+        android:text="Get Time Format"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/time"
+        app:layout_constraintStart_toStartOf="@+id/time" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="347dp"
+        android:layout_height="61dp"
+        android:fontFamily="@font/cantata_one"
+        android:gravity="center_horizontal"
+        android:text="Date"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/dateFormat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.86" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="278dp"
+        android:layout_height="47dp"
+        android:text="Time"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/cantata_one"
+        app:layout_constraintBottom_toTopOf="@+id/timeFormat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateButton"
+        android:gravity="center_horizontal" />
+
+    <ImageButton
+        android:id="@+id/next_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/next_page"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="32dp"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
